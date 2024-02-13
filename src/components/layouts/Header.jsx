@@ -14,14 +14,14 @@ const Header = () => {
 
   return (
     <>
-      <nav className="px-6 flex justify-between text-xs lg:text-sm z-1000 shadow-lg h-8 lg:h-9">
+      <nav className="px-6 text-[#A31621] flex justify-between font-semibold text-xs lg:text-sm z-1000 shadow-lg h-8 lg:h-9">
         {/* Navlink's isActive works by matching the url 
         with the to attribute. User shouldn't confuse 
         this with the hover effect. */}
         <NavLink
           to="/"
           className={
-            "text-[#A31621] text-xl font-bold flex md:text-2xl lg:text-3xl items-end"
+            "text-xl font-bold flex md:text-2xl lg:text-3xl items-end"
           }
         >
           <img src="skv.png" className="w-8 h-8 lg:w-9 lg:h-9" alt="" />
@@ -30,16 +30,16 @@ const Header = () => {
         <div className="flex-1"></div>
         <div className="flex-1"></div>
         <div className="flex-1"></div>
-        <div className="hidden md:flex flex-grow justify-between items-end text-[#050404]">
-          <div className="hover:underline hover:text-[#A31621]">Clients</div>
-          <div className="hover:underline hover:text-[#A31621]">
+        <div className="hidden md:flex flex-grow justify-between items-end hover:cursor-pointer">
+          <div className="hover:underline">Clients</div>
+          <div className="hover:underline">
             Protection Tips
           </div>
-          <div className="hover:underline hover:text-[#A31621]">
+          <div className="hover:underline">
             Fire Extinguishers
           </div>
-          <div className="hover:underline hover:text-[#A31621]">About Us</div>
-          <div className="hover:underline hover:text-[#A31621]">Contact Us</div>
+          <div className="hover:underline">About Us</div>
+          <div className="hover:underline">Contact Us</div>
         </div>
 
         <div className="flex items-end md:hidden">
