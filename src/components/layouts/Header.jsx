@@ -14,32 +14,26 @@ const Header = () => {
 
   return (
     <>
-      <nav className="px-6 text-[#A31621] flex justify-between font-semibold text-xs lg:text-sm z-1000 shadow-lg h-8 lg:h-9">
+      <nav className="sticky top-0 px-6 text-[#A31621] flex justify-between font-semibold text-xs lg:text-sm z-10 shadow-lg h-8 lg:h-9">
         {/* Navlink's isActive works by matching the url 
         with the to attribute. User shouldn't confuse 
         this with the hover effect. */}
         <NavLink
           to="/"
-          className={
-            "text-xl font-bold flex md:text-2xl lg:text-3xl items-end"
-          }
+          className={"text-xl font-bold flex md:text-2xl lg:text-3xl items-end"}
         >
           <img src="skv.png" className="w-8 h-8 lg:w-9 lg:h-9" alt="" />
           SKV
         </NavLink>
-        <div className="flex-1"></div>
-        <div className="flex-1"></div>
-        <div className="flex-1"></div>
-        <div className="hidden md:flex flex-grow justify-between items-end hover:cursor-pointer">
-          <div className="hover:underline">Clients</div>
-          <div className="hover:underline">
-            Protection Tips
-          </div>
-          <div className="hover:underline">
+        <div className="hidden md:flex justify-between items-end hover:cursor-pointer">
+          <div className="hover:underline lg:mx-4 md:mx-3">Home</div>
+          <div className="hover:underline lg:mx-4 md:mx-3">Clients</div>
+          <div className="hover:underline lg:mx-4 md:mx-3">Protection Tips</div>
+          <div className="hover:underline lg:mx-4 md:mx-3">
             Fire Extinguishers
           </div>
-          <div className="hover:underline">About Us</div>
-          <div className="hover:underline">Contact Us</div>
+          <div className="hover:underline lg:mx-4 md:mx-3">About Us</div>
+          <div className="hover:underline lg:mx-4 md:mx-3">Contact Us</div>
         </div>
 
         <div className="flex items-end md:hidden">
@@ -54,6 +48,12 @@ const Header = () => {
             id="dropDownLists"
             className="absolute hidden right-12 top-8 py-1 mt-1 rounded-md shadow-xl w-44"
           >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm text-[#050404] hover:text-[#A31621]"
+            >
+              Home
+            </a>
             <a
               href="#"
               class="block px-4 py-2 text-sm text-[#050404] hover:text-[#A31621]"
