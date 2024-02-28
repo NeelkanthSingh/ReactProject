@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className="sticky top-0 px-6 text-[#A31621] flex justify-between font-semibold text-xs lg:text-sm z-10 shadow-lg h-8 lg:h-9">
+      <nav className="absolute top-0 left-12 right-12 px-6 text-[#A31621] flex justify-between font-semibold text-xs lg:text-sm z-10 shadow-lg h-8 lg:h-9">
         {/* Navlink's isActive works by matching the url 
         with the to attribute. User shouldn't confuse 
         this with the hover effect. */}
